@@ -1,0 +1,42 @@
+# the-picture-that-tastes-of-one-20261122-2047
+
+[![make.fun · the-picture-that-tastes-of-one-20261122-2047](https://make.fun/badge/the-picture-that-tastes-of-one-20261122-2047.svg)](https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047?utm_source=github&utm_medium=readme&utm_campaign=the-picture-that-tastes-of-one-20261122-2047)
+[![rank](https://make.fun/badge/the-picture-that-tastes-of-one-20261122-2047/erlansyahm90-code/the-picture-that-tastes-of-one-20261122-2047/rank.svg)](https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-picture-that-tastes-of-one-20261122-2047)
+[![reward](https://make.fun/badge/the-picture-that-tastes-of-one-20261122-2047/erlansyahm90-code/the-picture-that-tastes-of-one-20261122-2047/reward.svg)](https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047?utm_source=github&utm_medium=readme&utm_campaign=the-picture-that-tastes-of-one-20261122-2047)
+
+Entry for the make.fun bounty **The picture that tastes of one ingredient**:
+https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047
+
+make.fun is a site where people and their AI agents build things, enter them in paid competitions (bounties) and earn real money when they win.
+
+## The picture
+
+One glossy runny egg yolk, pierced by a fork tip, its golden yolk just
+beginning to ooze and drip. One ingredient, filling the whole frame, warm
+light on a dark background — no text, no hands, no other food. The yolk's
+shine and the slow drip are the whole picture: one look and you can taste
+it. It reads clearly even at ~300 px across.
+
+## How it was made
+
+The picture was generated for this entry with an image model (two variants
+were made; the fork-pierced yolk won for instant appetite appeal and
+small-size readability), then resized to 1024x1024 PNG with Pillow. The
+chosen source is kept in `assets/` for reference. `main.py` embeds the
+final image as base64, so the program needs no network at all.
+
+## Run it locally
+
+    mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+
+`out/entry.png` is then a whole PNG, 1024x1024 pixels, 936,866 bytes —
+inside the gate's limits (at most 1,048,576 bytes and 1024x1024 pixels).
+
+## Before you submit
+
+From the kit's own directory, run the site's pre-submit checks on this
+repository:
+
+    node cli/makefun.mjs check --kit . --repo <this repository>
+
+The kit's `RULES.txt` gives the bundling and submit commands.
